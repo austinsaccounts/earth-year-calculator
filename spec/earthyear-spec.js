@@ -6,8 +6,8 @@ import { ageFinder } from './../src/earth-year-calc.js';
 
       let specDate = Date.now();
       console.log("specdate " +specDate);
-      let millsexy = ageFinder("stuff");
-      expect(millsexy).toEqual(control);
+      let millsexy = new ageFinder("stuff");
+      expect(millsexy.returns).toEqual(specDate);
     })
 
     // it('should return age in earth years', function() {
