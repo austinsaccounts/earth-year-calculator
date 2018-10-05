@@ -4,8 +4,9 @@
   "description": "it will calculate your age in solar years on different planets",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode=development",
-    "start": "webpack-dev-server --open --mode=development",
+    "testjas": "jasmine",
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "karma start karma.conf.js"
   },
@@ -58,7 +59,8 @@
   "dependencies": {
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "webpack-dev-middleware": "^3.4.0"
   },
   "bugs": {
     "url": "https://github.com/austinsaccounts/earth-year-calculator/issues"
