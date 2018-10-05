@@ -4,6 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+  mode: "development",
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',
@@ -17,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Roman_Numerals',
+      title: 'earth-year-calculator',
       template: './src/index.html',
       inject: 'body'
     })
