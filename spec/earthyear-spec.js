@@ -1,6 +1,6 @@
 import { ageFinder } from './../src/earth-year-calc.js';
 
-  describe('age-finder', function() {
+  describe('ageFinder', function() {
 
     it('should return age in earth years', function() {
       let birthDate = new Date('1918-10-05');
