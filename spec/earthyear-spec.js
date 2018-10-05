@@ -2,12 +2,10 @@ import { ageFinder } from './../src/earth-year-calc.js';
 
   describe('ageFinder', function() {
 
-    it('should return the date', function() {
-
+    it('should return the date in milliseconds', function() {
       let specDate = Date.now();
-      console.log("specdate " +specDate);
-      let millsexy = new ageFinder("stuff");
-      expect(millsexy.returns).toEqual(specDate);
+      let results = new ageFinder("stuff");
+      expect(results.todayDate).toEqual(specDate);
     })
 
     // it('should return age in earth years', function() {

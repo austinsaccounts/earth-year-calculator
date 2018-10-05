@@ -1,8 +1,9 @@
 export class ageFinder{
     constructor (birthDate) {
+      const earthSolarYearMS = 31556952000;
+      alert(earthSolarYearMS);
        this.birthday = birthDate;
-       console.log("this is fired birthday" + this.birthday);
-       this.returns = Date.now();
-       return this.returns;
+       this.todayDate = Date.now();
+
 }
     }
