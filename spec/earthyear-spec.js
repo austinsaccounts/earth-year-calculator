@@ -1,4 +1,4 @@
-import { age-finder } from './../src/earth-year-calc.js';
+import { ageFinder } from './../src/earth-year-calc.js';
 
   describe('age-finder', function() {
 

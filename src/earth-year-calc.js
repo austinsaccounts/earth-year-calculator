@@ -1,3 +1,3 @@
-export function age-finder(dateObj) {
+export function ageFinder(dateObj) {
   return "stuff";
 }
