@@ -2,13 +2,21 @@ import { ageFinder } from './../src/earth-year-calc.js';
 
   describe('ageFinder', function() {
 
-    it('should return the date in milliseconds', function() {
-      let specDate = Date.now();
-      let results = new ageFinder("stuff");
-      expect(results.todayDate).toEqual(specDate);
+    // it('should return the date in milliseconds', function() {
+    //   let specDate = Date.now();
+    //   let results = new ageFinder("stuff");
+    //   expect(results.todayDate).toEqual(specDate);
+    // })
+
+    it('should return age on earth', function() {
+      let birthDate = new Date('1917-10-05');
+      let today = new Date('2017-10-05');
+      let results = new ageFinder(birthDate, today);
+      expect(results.lifeTime).toEqual(solarYcontrol);
     })
 
     // it('should return age in earth years', function() {
+    // alert(results.lifeTime);
     //
     //   let birthDate = new Date('1918-10-05');
     //   let earthResult = new ageFinder(birthDate);
