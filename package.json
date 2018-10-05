@@ -4,10 +4,10 @@
   "description": "it will calculate your age in solar years on different planets",
   "main": "index.js",
   "scripts": {
-  "build": "webpack --mode development",
-  "start": "webpack-dev-server --open --mode development",
-  "lint": "eslint src/*.js",
-  "test": "karma start karma.conf.js"
+    "build": "webpack --mode development",
+    "start": "webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js",
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -53,7 +53,7 @@
     "uglifyjs-webpack-plugin": "^1.2.2",
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
-    "webpack-dev-server": "^3.1.0"
+    "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
