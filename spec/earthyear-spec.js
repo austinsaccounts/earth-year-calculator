@@ -8,11 +8,12 @@ import { ageFinder } from './../src/earth-year-calc.js';
     //   expect(results.todayDate).toEqual(specDate);
     // })
 
-    it('should return age on earth', function() {
+    it('should return age on earth in days', function() {
       let birthDate = new Date('1917-10-05');
       let today = new Date('2017-10-05');
-      let results = new ageFinder(birthDate, today);
-      expect(results.lifeTime).toEqual(solarYcontrol);
+      let answers = new ageFinder(birthDate, today);
+      let lifeSpan = answers.lifeSpan();
+      expect(lifeSpan).toEqual(birthDate);
     })
 
     // it('should return age in earth years', function() {
