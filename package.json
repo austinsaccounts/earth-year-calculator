@@ -1,0 +1,29 @@
+{
+  "name": "earth-year-calculator",
+  "version": "1.0.0",
+  "description": "it will calculate your age in solar years on different planets",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinsaccounts/earth-year-calculator.git"
+  },
+  "keywords": [
+    "epicodus",
+    "solar",
+    "year",
+    "age",
+    "calculator",
+    "test",
+    "driven",
+    "development"
+  ],
+  "author": "Austin Cummings aka Austin Cook",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austinsaccounts/earth-year-calculator/issues"
+  },
+  "homepage": "https://github.com/austinsaccounts/earth-year-calculator#readme"
+}
