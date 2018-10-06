@@ -6,8 +6,38 @@ export class Agefinder {
      }
 
       lifeSpan(){
-      let temp = ((this.todayDate - this.bDate) / 86400000);
+      let temp = Math.round((this.todayDate - this.bDate) / 86400000);
       this.lifeSpan = temp;
+      return temp;
+    }
+
+    lifeSpanYears(){
+    let temp = Math.round(this.lifeSpan / 365);
+    this.lifeSpanYears = temp;
+    return temp;
+  }
+
+    mercuryAge(){
+      let temp = Math.round(this.lifeSpanYears *.24);
+      this.mercurialYears = temp;
+      return temp;
+    }
+
+    venutianAge(){
+      let temp = this.lifeSpanYears *.62;
+      this.venutianYears = temp;
+      return temp;
+    }
+
+    martianAge(){
+      let temp = Math.round(this.lifeSpanYears *1.88);
+      this.martianYears = temp;
+      return temp;
+    }
+
+    jupiterAge(){
+      let temp = Math.round(this.lifeSpanYears *11.86);
+      this.jupiterYears = temp;
       return temp;
     }
 
