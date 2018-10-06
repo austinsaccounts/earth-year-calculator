@@ -9,7 +9,7 @@ this program will calculate your age based on the solar years of various planets
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. As it appears you have already downloaded, check that yo have the proper prereqs.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. As it appears you have already downloaded, check that you have the proper prereqs.
 
 
 
@@ -58,7 +58,7 @@ it('should return age on earth in days', function() {
 })
 ```
 ## Bugs
-  Dates enter before 1970-01-01 have not been accounted for.
+  Date entry values before 1970-01-01 have not been accounted for.
 
 
 ## Built With

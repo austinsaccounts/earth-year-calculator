@@ -33,9 +33,10 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let results = new Agefinder(birthDate, today);
       let earthDayAge = results.lifeSpan(birthDate, today);
       let earthYearAge = results.lifeSpanYears();
-      let mercurialResult = results.mercuryAge();
-      expect(mercurialResult).toEqual(416)
+      let mercurialResult = results.mercuryAge(earthDayAge);
+      expect(mercurialResult).toEqual(417)
     })
+
     it('should return age in venutian years', function() {
       let birthDate = new Date('1917-10-05');
       let today = new Date('2017-10-05');
