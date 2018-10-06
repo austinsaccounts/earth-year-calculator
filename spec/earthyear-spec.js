@@ -1,9 +1,9 @@
 import { Agefinder } from './../src/earth-year-calc.js';
-let birthDate = new Date('1917-10-05');
-let today = new Date('2017-10-05');
-let results = new Agefinder(birthDate, today);
-
 describe('Agefinder', function() {
+  let birthDate = new Date('1917-10-05');
+  let today = new Date('2017-10-05');
+  let results = new Agefinder(birthDate, today);
+
   it('should return age on earth in days', function() {
   expect(results.earthDayAge).toEqual(36525);
   })
@@ -24,16 +24,15 @@ describe('Agefinder', function() {
     expect(results.martianYears).toEqual(53);
   })
 
-  it('should return age in jupiterian years', function() {
-    alert(results.jupiterYears);
+  it('should return age in jupiterran years', function() {
     expect(results.jupiterYears).toEqual(8);
   })
 
   it('should return the date in milliseconds since utc', function() {
     let today = Date.now();
     let specDate = Date.now();
-    let results = new Agefinder(specDate, today);
-    let todayDate = results.todayDate;
+    let tests = new Agefinder(specDate, today);
+    let todayDate = tests.todayDate;
     expect(todayDate).toEqual(today);
   })
 
