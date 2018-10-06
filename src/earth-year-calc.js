@@ -38,6 +38,9 @@ export class Agefinder {
     jupiterAge(){
       let temp = Math.round(this.lifeSpanYears *11.86);
       this.jupiterYears = temp;
+      if (temp > 80){
+        alert(`you should be dead`);
+      }
       return temp;
     }
 
