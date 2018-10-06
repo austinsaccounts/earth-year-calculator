@@ -66,6 +66,9 @@ https://github.com/austinsaccounts/earth-year-calculator.git
 node, js, html, css
 and many plugins and webpacks, along with bbel, jasmine and karma
 
+## Edits
+In original version when working with the ClassAgeFinder "Constructor", i was encountering difficulties applying mathmatical operations to apply them as key:pair; values, so began using functions to assign them, this took up alot of space, and has subsequently been rectified.
+
 ## Contributing
 Austin Cummings, and many webpacks as listed in package.json and webpack.config.js
 
