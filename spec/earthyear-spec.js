@@ -1,26 +1,26 @@
-import { ageFinder } from './../src/earth-year-calc.js';
+import { Agefinder } from './../src/earth-year-calc.js';
 
-  describe('ageFinder', function() {
+  describe('Agefinder', function() {
 
-    // it('should return the date in milliseconds', function() {
-    //   let specDate = Date.now();
-    //   let results = new ageFinder("stuff");
-    //   expect(results.todayDate).toEqual(specDate);
-    // })
+    it('should return the date in milliseconds', function() {
+      let today = Date.now();
+      let specDate = Date.now();
+      let results = new Agefinder(specDate, today);
+      expect(results.todayDate).toEqual(specDate);
+    })
 
     it('should return age on earth in days', function() {
       let birthDate = new Date('1917-10-05');
       let today = new Date('2017-10-05');
-      let answers = new ageFinder(birthDate, today);
-      let lifeSpan = answers.lifeSpan();
-      expect(lifeSpan).toEqual(birthDate);
+      let results = new Agefinder(birthDate, today);
+      expect(results.lifeSpan).toEqual(specDate);
     })
 
     // it('should return age in earth years', function() {
     // alert(results.lifeTime);
     //
     //   let birthDate = new Date('1918-10-05');
-    //   let earthResult = new ageFinder(birthDate);
+    //   let earthResult = new Agefinder(birthDate);
     //   let control = 100;
     //   alert(earthResult);
     //   expect(earthResult).toEqual(control);
