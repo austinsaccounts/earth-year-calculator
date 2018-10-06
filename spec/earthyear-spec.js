@@ -69,22 +69,6 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let venutianResult = results.venutianAge();
       let jupiterResult = results.jupiterAge();
       expect(jupiterResult).toEqual(1186);
-    });
-
-
-    // it('should return life expectancy on that planet', function() {
-    //   let birthDate = new Date('1918-10-05');
-    //   let expectancyResult = age-finder(birthDate);
-    //   let control = "na";
-    //   expect(expectancyResult).toEqual(control)
-    // })
-    //
-    // it('should return if they are too old to live on that planet, and by how many years', function() {
-    //   let birthDate = new Date('1918-10-05');
-    //   let depressingResult = age-finder(birthDate);
-    //   let control = "stuff";
-    //   expect(depressingResult).toEqual(control)
-    // })
-
+    })
 
 });
