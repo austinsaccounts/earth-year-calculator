@@ -6,14 +6,16 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let today = Date.now();
       let specDate = Date.now();
       let results = new Agefinder(specDate, today);
-      expect(results.todayDate).toEqual(specDate);
+      let todayDate = results.todayDate;
+      expect(todayDate).toEqual(today);
     })
 
     it('should return age on earth in days', function() {
       let birthDate = new Date('1917-10-05');
       let today = new Date('2017-10-05');
       let results = new Agefinder(birthDate, today);
-      expect(results.lifeSpan).toEqual(specDate);
+      let earthDayAge = results.lifeSpan(birthDate, today);
+      expect(earthDayAge).toEqual(36525);
     })
 
     // it('should return age in earth years', function() {
