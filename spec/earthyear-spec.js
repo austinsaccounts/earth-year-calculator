@@ -34,7 +34,7 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let earthDayAge = results.lifeSpan(birthDate, today);
       let earthYearAge = results.lifeSpanYears();
       let mercurialResult = results.mercuryAge();
-      expect(mercurialResult).toEqual(24)
+      expect(mercurialResult).toEqual(416)
     })
     it('should return age in venutian years', function() {
       let birthDate = new Date('1917-10-05');
@@ -44,7 +44,7 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let earthYearAge = results.lifeSpanYears();
       let mercurialResult = results.mercuryAge();
       let venutianResult = results.venutianAge();
-      expect(venutianResult).toEqual(62)
+      expect(venutianResult).toEqual(161)
     })
 
     it('should return age in martian years', function() {
@@ -56,7 +56,7 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let mercurialResult = results.mercuryAge();
       let venutianResult = results.venutianAge();
       let martianResult = results.martianAge();
-      expect(martianResult).toEqual(188);
+      expect(martianResult).toEqual(53);
     })
 
     it('should return age in jupiterian years', function() {
@@ -68,7 +68,7 @@ import { Agefinder } from './../src/earth-year-calc.js';
       let mercurialResult = results.mercuryAge();
       let venutianResult = results.venutianAge();
       let jupiterResult = results.jupiterAge();
-      expect(jupiterResult).toEqual(1186);
+      expect(jupiterResult).toEqual(8);
     })
 
 });
