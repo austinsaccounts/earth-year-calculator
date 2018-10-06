@@ -7,12 +7,12 @@ export class Agefinder {
 
       lifeSpan(){
       let temp = Math.round((this.todayDate - this.bDate) / 86400000);
-      this.lifeSpan = temp;
+      this.earthDayAge= temp;
       return temp;
     }
 
     lifeSpanYears(){
-    let temp = Math.round(this.lifeSpan / 365);
+    let temp = Math.round(this.earthDayAge / 365);
     this.lifeSpanYears = temp;
     return temp;
   }
@@ -39,7 +39,7 @@ export class Agefinder {
       let temp = Math.round(this.lifeSpanYears *11.86);
       this.jupiterYears = temp;
       if (temp > 80){
-        alert(`you should be dead`);
+        alert(`at your age, on jupiter, you should be really dead`);
       }
       return temp;
     }

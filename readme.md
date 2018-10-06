@@ -1,10 +1,11 @@
 # Project Title
 Earth Year Calculator
 this program will calculate your age based on the solar years of various planets
-(A Mercury year is .24 Earth years.)
-(A Venus year is .62 Earth years.)
-(A Mars year is 1.88 Earth years.)
-(A Jupiter year is 11.86 Earth years.)
+(A Mercury year is .24 earthYears, approx 87.6 earth days)
+(A Venus year is .62 Earth years, approx 226.3  earth days)
+(A Mars year is 1.88 Earth years approx 686.2  earth days)
+(A Jupiter year is 11.86 Earth years, aprrox 4328.9  earth days)
+
 
 ## Getting Started
 
@@ -42,6 +43,7 @@ $ let results = new Agefinder(birthDate, today);
 ````
  instantiates the agefinder, then various "classes" will manipulate that information to achieve the results.
 
+
 ### And coding style tests
 
 Example below
@@ -55,6 +57,9 @@ it('should return age on earth in days', function() {
   expect(earthDayAge).toEqual(36525);
 })
 ```
+## Bugs
+  Dates enter before 1970-01-01 have not been accounted for.
+
 
 ## Built With
 https://github.com/austinsaccounts/earth-year-calculator.git
