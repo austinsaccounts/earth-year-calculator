@@ -1,4 +1,5 @@
 import { Agefinder } from './../src/earth-year-calc.js';
+
 describe('Agefinder', function() {
   let birthDate = new Date('1917-10-05');
   let today = new Date('2017-10-05');
@@ -35,5 +36,4 @@ describe('Agefinder', function() {
     let todayDate = tests.todayDate;
     expect(todayDate).toEqual(today);
   })
-
-});
+})
